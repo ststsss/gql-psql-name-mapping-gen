@@ -62,9 +62,9 @@ func main() {
 	var individualFilePaths string
 	var output string
 
-	flag.StringVar(&filePattern, "pattern", "", "The file pattern to match (e.g. ./graph/model/*.go)")
-	flag.StringVar(&individualFilePaths, "files", "", "Comma-separated list of individual file paths (e.g. ./db/sqlc/models.go,./graph/model/auth.go)")
-	flag.StringVar(&output, "output", "./generate/mapping/field_and_json_mapping.go", "Output file path")
+	flag.StringVar(&filePattern, "pattern", "", "The file pattern to match (e.g. ./model/*.go)")
+	flag.StringVar(&individualFilePaths, "files", "", "Comma-separated list of individual file paths (e.g. .model/user.go,...)")
+	flag.StringVar(&output, "output", "", "Output file path")
 
 	flag.Parse()
 
