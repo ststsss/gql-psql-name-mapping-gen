@@ -94,7 +94,7 @@ func main() {
 		}
 	}
 
-	tmpl := `package mapping
+	tmpl := `package generated
 
 var AllMappings = map[string]string{
 	{{- range $key, $value := .}}
